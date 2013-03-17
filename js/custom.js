@@ -32,4 +32,24 @@ $(document).ready(function(){
 		$('#Container .textContainer').addClass('lowHeight');
 	}
 
+	$('#Container .letsText').click(function(){
+		$('#Container .bossChair').fadeOut(
+			function(){
+				$('#Container .workerChair').fadeOut(
+					function(){
+						$('#Container .textContainer').animate({'bottom':'-500px'},function(){
+							$(this).fadeOut(
+								function(){
+									$('#SendFormContainer').fadeIn(function(){
+										$('#SendFormContainer').animate({'top':'5%'});
+									});
+								}
+							);
+						});
+					}
+				);	
+			}
+		);
+	});
+
 });

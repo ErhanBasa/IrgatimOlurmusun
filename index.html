@@ -8,8 +8,11 @@
 <meta name="description" content="İş ve işçi bulma üzerine projecik.">
 <meta property="og:title" content="Irgatım olur musun?"/>
 <meta property="og:description" content="İş ve işçi bulma üzerine projecik." />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
 <script type="text/javascript">
 
@@ -33,7 +36,10 @@
 		<p><strong>Bu maaşı zaten alırsın.</strong> Ama başlangıç böyle olsun.</p>
 		<p><strong>Bütün bunlara rağmen soruyorum</strong></p>
 		<h1 id="Logo"><a href="javascript:void(0)">Irgatım Olur musun? İş ve işçi bulma sitesi.</a></h1>
-		<p><strong>#isveiscisitesi</strong><strong>#pekyakında</strong></p>
+		<p>
+			<a href="#" class="btn btn-info">Ne Zaman Didim Haci</a>
+			<a href="#GetText" class="btn btn-primary letsText">Sana Bi Söz Yazdım</a>
+		</p>
 	</div>
 	<div class="bossChair">
 		<span></span>
@@ -41,6 +47,32 @@
 	<div class="workerChair">
 		<span></span>
 	</div>
+</div>
+<div id="SendFormContainer">
+	<form>
+	  <fieldset>
+	    <legend>Tutmayın küçük enişteyi</legend>
+		<label class="radio">
+		  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+		  İşçiyim, hala elim ayağım titriyor 
+		</label>
+		<label class="radio">
+		  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2">
+		  İşverenim, bu marabalar bu kadar etmez
+		</label>
+		<label class="textarea">
+		<textarea rows="4" class="span5" placeholder="Gardaş suç bizde ki.."></textarea>
+		</label>
+	    <span class="help-block">Bundan sonrası zorunlu değildir. Verilen bilgiler paylaşımcının sorumluluğundadır. </span>
+	    <input type="text" placeholder="İsminiz">
+	    <input type="text" placeholder="Görüştüğünüz Şirket">
+	    <input type="text" placeholder="Görüştüğünüz Kişi">
+	    <label class="checkbox">
+	      <input type="checkbox"> Beni Bozmaz Hacı
+	    </label>
+	    <button type="submit" class="btn btn-primary">Ver Ayarı</button>
+	  </fieldset>
+	</form>
 </div>
 </body>
 </html>
