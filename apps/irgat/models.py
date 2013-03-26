@@ -18,7 +18,7 @@ class Atar(models.Model):
     konusan_kisi = models.CharField(u"İsim", max_length=40, blank=True, null=True)
     sirket = models.CharField(u"Köy", max_length=60, blank=True, null=True)
     konusulan_kisi = models.CharField(u"Ağa", max_length=40, blank=True, null=True)
-    tarih = models.DateTimeField(default=datetime.now)
+    tarih = models.DateTimeField(default=datetime.now())
     aktif = models.BooleanField(default=False)
     objects = AtarManager()
 
@@ -29,3 +29,7 @@ class Atar(models.Model):
         verbose_name=u"Atar"
         verbose_name_plural=u"Atarlar"
         ordering=("-tarih",)
+<<<<<<< HEAD
+=======
+        
+>>>>>>> f6eb45152f75c9d10189ad50fb6306bb13f3340d
