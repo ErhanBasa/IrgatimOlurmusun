@@ -4,8 +4,8 @@ from django.db import models
 from datetime import datetime
 
 KIMLER = (
-        ('0', u'Irgatım ben'),
-        ('1', u'Ağayım ben')
+        ('0', u'İşçiyim, hala elim ayağım titriyor '),
+        ('1', u'İşverenim, bu marabalar bu kadar etmez')
     )
 
 class AtarManager(models.Manager):

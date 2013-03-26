@@ -1,4 +1,4 @@
-﻿{% extends "base.html" %}
+{% extends "base.html" %}
 
 {% block icerikmicerik %}
 <div id="Container">
@@ -21,35 +21,30 @@
 	</div>
 </div>
 <div id="SendFormContainer">
-	<!--
-	<form>
+	<form action="." method="POST" id="ercanpy">{% csrf_token %}
 	  <fieldset>
 	    <legend>Tutmayın küçük enişteyi</legend>
-		<label class="radio">
+		{{ form.kimsin_sen }}
+		<!--<label class="radio">
 		  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
 		  İşçiyim, hala elim ayağım titriyor 
 		</label>
 		<label class="radio">
 		  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2">
 		  İşverenim, bu marabalar bu kadar etmez
-		</label>
+		</label>-->
 		<label class="textarea">
-		<textarea rows="4" class="span5" placeholder="Gardaş suç bizde ki.."></textarea>
+		{{ form.atar_icerigi }}
 		</label>
 	    <span class="help-block">Bundan sonrası zorunlu değildir. Verilen bilgiler paylaşımcının sorumluluğundadır. </span>
-	    <input type="text" placeholder="İsminiz">
-	    <input type="text" placeholder="Görüştüğünüz Şirket">
-	    <input type="text" placeholder="Görüştüğünüz Kişi">
+	    {{ form.konusan_kisi }}
+	    {{ form.sirket }}
+	    {{ form.konusulan_kisi }}
 	    <label class="checkbox">
 	      <input type="checkbox"> Beni Bozmaz Hacı
 	    </label>
 	    <button type="submit" class="btn btn-primary">Ver Ayarı</button>
 	  </fieldset>
-	</form>
--->
-	<form action="." method="POST" id="ercanpy">{% csrf_token %}
-	{{ form.as_p }}
-	<input type="submit" class="btn btn-primary">Ver Ayarı</input>
 	</form>
 </div>
 {% endblock %}
