@@ -4,8 +4,8 @@ from django.db import models
 from datetime import datetime
 
 KIMLER = (
-        ('0', u'Irgatım ben'),
-        ('1', u'Ağayım ben')
+        ('0', u'İşçiyim, hala elim ayağım titriyor '),
+        ('1', u'İşverenim, bu marabalar bu kadar etmez')
     )
 
 class AtarManager(models.Manager):
@@ -18,7 +18,7 @@ class Atar(models.Model):
     konusan_kisi = models.CharField(u"İsim", max_length=40, blank=True, null=True)
     sirket = models.CharField(u"Köy", max_length=60, blank=True, null=True)
     konusulan_kisi = models.CharField(u"Ağa", max_length=40, blank=True, null=True)
-    tarih = models.DateTimeField(default=datetime.now)
+    tarih = models.DateTimeField(default=datetime.now())
     aktif = models.BooleanField(default=False)
     objects = AtarManager()
 
@@ -29,3 +29,4 @@ class Atar(models.Model):
         verbose_name=u"Atar"
         verbose_name_plural=u"Atarlar"
         ordering=("-tarih",)
+        
