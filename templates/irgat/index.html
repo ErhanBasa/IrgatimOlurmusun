@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+﻿{% extends "base.html" %}
 
 {% block icerikmicerik %}
 <div id="Container">
@@ -20,11 +20,7 @@
 		<span></span>
 	</div>
 </div>
-<<<<<<< HEAD
-<div id="SendFormContainer">
-=======
 <div id="SendFormContainer">	
->>>>>>> f6eb45152f75c9d10189ad50fb6306bb13f3340d
 	<form action="." method="POST" id="ercanpy">{% csrf_token %}
 	  <fieldset>
 	    <legend>Tutmayın küçük enişteyi</legend>
@@ -44,9 +40,6 @@
 	    {{ form.konusan_kisi }}
 	    {{ form.sirket }}
 	    {{ form.konusulan_kisi }}
-	    <label class="checkbox">
-	      <input type="checkbox"> Beni Bozmaz Hacı
-	    </label>
 	    <button type="submit" class="btn btn-primary">Ver Ayarı</button>
 	  </fieldset>
 	</form>

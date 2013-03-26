@@ -29,7 +29,4 @@ class Atar(models.Model):
         verbose_name=u"Atar"
         verbose_name_plural=u"Atarlar"
         ordering=("-tarih",)
-<<<<<<< HEAD
-=======
         
->>>>>>> f6eb45152f75c9d10189ad50fb6306bb13f3340d
